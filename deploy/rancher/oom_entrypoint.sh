@@ -39,7 +39,9 @@ EOF
 
 install_rancher_and_onap() {
   echo "Running rancher install first - 25 min"
-  wget https://git.onap.org/logging-analytics/plain/deploy/rancher/oom_rancher_setup.sh
+  ## GS: Disable in order to customize the Rancher setup ##
+  # wget https://git.onap.org/logging-analytics/plain/deploy/rancher/oom_rancher_setup.sh
+  wget https://github.com/iamsivakumarg/onap-oom/blob/main/deploy/rancher/oom_rancher_setup.sh
   sudo chmod 777 oom_rancher_setup.sh
   sudo ./oom_rancher_setup.sh -b $BRANCH -s $SERVER -e $ENVIRON
   echo "Running oom install - 45-90 min - 120 pod limit per vm"
