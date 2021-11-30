@@ -1,0 +1,18 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {     
+      "scriptURL": { "value": "https://git.onap.org/logging-analytics/plain/deploy/rancher/oom_entrypoint.sh"},
+      "onapBranch": { "value": "master" },
+      "onapEnvironment": { "value": "onap"},
+      "vmName": { "value": "telco-onapoom-01" },
+      "sshKeyData": {
+      "value": "ssh-rsa  AAAAB3NzaC1yc2EAAAADAQABAAABgQDk6NmCEqE0egKkdAXDPkspUQIdYkqJXlbl5ZO9X7c+tvgBN67hh3TdujDkffGDUi1u9GXNlQ6o2gN2yPLryVd5GtMxpxSgYZR/usD1lA2PZUaXlZn7orLncVqb/dDct4GKeCpHTVd3vbrtVOgRlmnwTEcYqCzR0nMrqIPUhpOmwei4LENK132AGHElm8/IOgQFuxNL0magaK5cAcqSC8g4YbhqXTbGG+XYhTC25CqZaFaUb43ok7lKMGF+9LOHPvMs0gIazaQeZC3IrruEwkUw3mzEzB/8yPMB3D/HAdhqTOhB2hxkwTTbQ91JR67qC/36RZkEYHY16a09mw7oElRs0OVq01W10LidusBgLrwOuxVFHRYKd47kDxdmF4XH56fE+wUUfNIoYnh9zkVzVgqV28k+Lcj1hKpfOWl7rols4iCSnWhK7LCSlXMkFa+wi+8V5dpDh3I9WfiwPNxjw2ZskxDCIj1LpXZJRPanq01qxKUxbtpjhtMNOMNtdePa+oE="
+      },
+      "dnsLabelPrefix": { "value": "telco-onapoom" },
+      "vmSize": { "value": "Standard_E64s_v3" },
+      "scriptName": { "value": "oom_entrypoint.sh"},
+      "osType": { "value": "Linux" },
+      "adminUsername": { "value": "ubuntu"}
+  }
+}
